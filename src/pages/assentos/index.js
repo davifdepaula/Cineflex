@@ -7,7 +7,7 @@ import Sucess from '../success'
 
 import { SeatsContainer, SeatsChoices, Card } from './styles'
 
-function Seats() {
+function Assentos() {
     const [entries, setEntries] = useState()
     const [select, setSelect] = useState([])
     const [selectSeats, setSelectSeats] = useState([])
@@ -160,4 +160,4 @@ return (
   
 }
 
-export default Seats
+export default Assentos

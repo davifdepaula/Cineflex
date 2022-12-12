@@ -4,7 +4,7 @@ import { AppContainer } from "./styles";
 import Navbar from "../Navbar";
 import Home from "../../pages/home";
 import Sessoes from "../../pages/sessao"
-import Seats from "../../pages/ seats";
+import Assentos from "../../pages/assentos";
 import Sucess from "../../pages/success";
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path ="/" element={<Home />} ></Route>
           <Route path ="/sessoes/:id" element={<Sessoes />} ></Route>
-          <Route path ="/seats/:id" element={<Seats />} ></Route>
+          <Route path ="/assentos/:id" element={<Assentos />} ></Route>
           <Route path ="/sucess" element={<Sucess />} ></Route>
         </Routes>     
         </AppContainer> 
