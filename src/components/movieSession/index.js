@@ -9,10 +9,9 @@ function MovieSession(props) {
 
   return (
     <div>
-      <DateContainer data-test="movie-day">
+      <p data-test="movie-day">
         <span>{weekday}</span> <span>{date}</span>
-      </DateContainer>
-      <TimeContainer>
+      </p>
         {showTimes.map(showtime => {
           return (
             <button 
@@ -22,7 +21,6 @@ function MovieSession(props) {
                 {showtime.name}
             </button>
         )})}
-      </TimeContainer>
     </div>
   )
 }
