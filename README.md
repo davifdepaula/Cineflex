@@ -49,7 +49,7 @@ Uma Single-Page Application (SPA) para um cinema, usando React Router!
 
 ## :rocket: Tecnologias ##
 
-The following tools were used in this project:
+As seguintes ferramentas são utilizadas:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
