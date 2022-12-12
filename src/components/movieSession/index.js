@@ -12,7 +12,7 @@ function MovieSession(props) {
       <DateContainer data-test="movie-day">
         <span>{weekday}</span> <span>{date}</span>
       </DateContainer>
-      <TimeContainer>
+      <TimeContainer data-test="showtime">
         {showTimes.map(showtime => {
           return (
             <button data-test="showtime" onClick = {() =>  navigate(`/assentos/${showtime.id}`, {state: {movieTitle, posterURL}})} key = {showtime.id}>{showtime.name}</button>
