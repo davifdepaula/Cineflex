@@ -14,7 +14,6 @@ function MovieSession(props) {
       </DateContainer>
       <TimeContainer>
         {showTimes.map(showtime => {
-          return (
             <Link data-test="showtime"  to = {`/assentos/${showtime.id}`} key = {showtime.id}>
               <button 
                 // data-test="showtime" 
@@ -24,7 +23,7 @@ function MovieSession(props) {
                   {showtime.name}
               </button>
             </Link>
-        )})}
+        })}
       </TimeContainer>
     </div>
   )
