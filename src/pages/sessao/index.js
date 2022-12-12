@@ -6,7 +6,7 @@ import Footer from '../../components/footer'
 
 import { Container, SessionContainer } from './styles'
 
-function Session() {
+function Sessoes() {
     const {id} = useParams()
     const [movieSession, setMovieSession] = useState()
     const location = useLocation()
@@ -52,4 +52,4 @@ function Session() {
   )
 }
 
-export default Session
+export default Sessoes

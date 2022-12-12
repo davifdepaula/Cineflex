@@ -7,7 +7,7 @@ function Movie(props) {
 
     return (
         <div data-test="movie">
-            {<img onClick={() => navigate(`/session/${id}`, {state: {movieTitle, posterURL }})} src = {posterURL} />}
+            {<img onClick={() => navigate(`/sessoes/${id}`, {state: {movieTitle, posterURL }})} src = {posterURL} />}
         </div>
     )
 }

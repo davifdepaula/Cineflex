@@ -3,7 +3,7 @@ import { AppContainer } from "./styles";
 
 import Navbar from "../Navbar";
 import Home from "../../pages/home";
-import Session from "../../pages/session";
+import Sessoes from "../../pages/sessao"
 import Seats from "../../pages/ seats";
 import Sucess from "../../pages/success";
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <AppContainer>
         <Routes>
           <Route path ="/" element={<Home />} ></Route>
-          <Route path ="/session/:id" element={<Session />} ></Route>
+          <Route path ="/sessoes/:id" element={<Sessoes />} ></Route>
           <Route path ="/seats/:id" element={<Seats />} ></Route>
           <Route path ="/sucess" element={<Sucess />} ></Route>
         </Routes>     
