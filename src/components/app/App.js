@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import Home from "../../pages/home";
 import Sessoes from "../../pages/sessao"
 import Assentos from "../../pages/assentos";
-import Sucess from "../../pages/success";
+import Sucesso from "../../pages/successo";
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
           <Route path ="/" element={<Home />} ></Route>
           <Route path ="/sessoes/:id" element={<Sessoes />} ></Route>
           <Route path ="/assentos/:id" element={<Assentos />} ></Route>
-          <Route path ="/sucess" element={<Sucess />} ></Route>
+          <Route path ="/sucesso" element={<Sucesso />} ></Route>
         </Routes>     
         </AppContainer> 
       </BrowserRouter>

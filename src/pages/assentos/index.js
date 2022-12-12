@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams, useLocation } from 'react-router-dom'
 import Choices from '../../components/choices'
 import Footer from '../../components/footer'
-import Sucess from '../success'
+import Sucess from '../successo'
 
 import { SeatsContainer, SeatsChoices, Card } from './styles'
 
@@ -81,7 +81,7 @@ function Assentos() {
   const url = `https://mock-api.driven.com.br/api/v8/cineflex/seats/book-many`
   axios.post(url, clientInfo)
     .then(response => {
-      navigate("/sucess", {state: {movieTitle, date, time, selectSeats, name, CPF}})
+      navigate("/sucesso", {state: {movieTitle, date, time, selectSeats, name, CPF}})
     })
     .catch(error => console.log(error.response.data))
 }

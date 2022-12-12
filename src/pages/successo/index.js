@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { Container, TicketContainer } from './styles'
 
 
-function Sucess({route}) {
+function Sucesso({route}) {
     const location = useLocation()
     const navigate = useNavigate()
     const {movieTitle, date, time, selectSeats, name, CPF} = location.state
@@ -40,4 +40,4 @@ function Sucess({route}) {
   )
 }
 
-export default Sucess
+export default Sucesso
