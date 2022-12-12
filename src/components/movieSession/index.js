@@ -13,9 +13,15 @@ function MovieSession(props) {
         <span>{weekday}</span> <span>{date}</span>
       </DateContainer>
       <TimeContainer>
-        {showTimes.map(showtime => 
-            <button data-test="showtime" onClick = {() =>  navigate(`/assentos/${showtime.id}`)} key = {showtime.id} >{showtime.name}</button>
-        )}
+        {showTimes.map(showtime => {
+          return (
+            <button 
+              data-test="showtime" 
+              onClick = {() =>  navigate(`/assentos/${showtime.id}`)} 
+              key = {showtime.id}>
+                {showtime.name}
+            </button>
+        )})}
       </TimeContainer>
     </div>
   )
