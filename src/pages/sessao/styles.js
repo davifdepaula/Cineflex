@@ -18,9 +18,10 @@ export const Container = styled.div`
         font-size: 24px;
         font-weight: 400;
 }
-
 `
 
 export const SessionContainer = styled.div`
+    margin-bottom: 130px;
+
 `
 

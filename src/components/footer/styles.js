@@ -8,6 +8,9 @@ export const FooterContainer = styled.div`
     width: 100%;
     gap: 14px;
     background: #9EADBA;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 
 ` 
 
