@@ -16,7 +16,7 @@ function Assentos() {
     const {id} = useParams()
     const navigate = useNavigate()
     const location = useLocation()
-    const {movieTitle, posterURL} = location.state
+    // const {movieTitle, posterURL} = location.state
 
     useEffect(() => {
         const URL = `https://mock-api.driven.com.br/api/v8/cineflex/showtimes/${id}/seats`
@@ -25,7 +25,6 @@ function Assentos() {
             .catch(error => console.log(error.response.data))
     })
 
-  
   if (entries === undefined){
       return <>Loading ...</>
   }
@@ -78,7 +77,7 @@ function Assentos() {
 
   const date = entries.day.date
   const time = entries.name
-
+  const movieTitle = entries.movie.title
   const url = `https://mock-api.driven.com.br/api/v8/cineflex/seats/book-many`
   axios.post(url, clientInfo)
     .then(response => {
@@ -148,8 +147,8 @@ return (
     </form>
 
     <Footer
-      movieTitle = {movieTitle}
-      posterURL = {posterURL}
+      movieTitle = {entries.movie.title}
+      posterURL = {entries.movie.posterURL}
       date = {entries.day.date}
       time = {entries.name}
     />
