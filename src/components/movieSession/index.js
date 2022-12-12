@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import Footer from '../footer'
 import { DateContainer, TimeContainer } from './styles'
 
@@ -15,12 +15,15 @@ function MovieSession(props) {
       <TimeContainer>
         {showTimes.map(showtime => {
           return (
-            <button 
-              data-test="showtime" 
-              onClick = {() =>  navigate(`/assentos/${showtime.id}`)} 
-              key = {showtime.id}>
-                {showtime.name}
-            </button>
+            <Link data-test="showtime"  to = {`/assentos/${showtime.id}`} key = {showtime.id}>
+              <button 
+                // data-test="showtime" 
+                // onClick = {() =>  navigate(`/assentos/${showtime.id}`)} 
+                // key = {showtime.id}
+                >
+                  {showtime.name}
+              </button>
+            </Link>
         )})}
       </TimeContainer>
     </div>
