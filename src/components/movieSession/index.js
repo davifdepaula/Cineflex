@@ -12,15 +12,14 @@ function MovieSession(props) {
       <p data-test="movie-day">
         <span>{weekday}</span> <span>{date}</span>
       </p>
-        {showTimes.map(showtime => {
-          return (
+        {showTimes.map(showtime => 
             <button 
               data-test="showtime" 
               onClick = {() =>  navigate(`/assentos/${showtime.id}`)} 
               key = {showtime.id}>
                 {showtime.name}
             </button>
-        )})}
+        )}
     </div>
   )
 }
