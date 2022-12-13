@@ -36,7 +36,7 @@ function Sessoes() {
                 idSession = {item.id}
                 date = {item.date}
                 weekday = {item.weekday} 
-                showTimes = {item.showtimes}
+                showtimes = {item.showtimes}
                 />
             ) 
         })}
