@@ -15,9 +15,10 @@ function MovieSession(props) {
         {showtimes.map(showtime => {
           return (
             <button 
-              data-test="showtime" 
               onClick = {() =>  navigate(`/assentos/${showtime.id}`)} 
-              key = {showtime.id}>
+              key = {showtime.id}
+              data-test="showtime" 
+              >
                 {showtime.name}
             </button>
         )})}
