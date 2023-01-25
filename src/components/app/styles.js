@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
-export const AppContainer = styled.div`
+export const GlobalStyle = createGlobalStyle`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
 `

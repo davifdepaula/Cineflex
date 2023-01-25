@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AppContainer } from "./styles";
+import { GlobalStyle } from "./styles";
 
 import Navbar from "../Navbar";
 import Home from "../../pages/home";
@@ -11,14 +11,13 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <AppContainer>
+        <GlobalStyle />
         <Routes>
           <Route path ="/" element={<Home />} ></Route>
           <Route path ="/sessoes/:id" element={<Sessoes />} ></Route>
           <Route path ="/assentos/:id" element={<Assentos />} ></Route>
           <Route path ="/sucesso" element={<Sucesso />} ></Route>
-        </Routes>     
-        </AppContainer> 
+        </Routes>      
       </BrowserRouter>
 
     </>
