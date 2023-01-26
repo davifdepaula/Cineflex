@@ -20,7 +20,6 @@ export const Container = styled.div`
 
 `
 export const MoviesContainer = styled.div`
-    margin: 0 auto;
     cursor: pointer;
 
     .moviesGrid {
@@ -30,6 +29,22 @@ export const MoviesContainer = styled.div`
         flex-wrap: wrap;
         gap: 10px;
         width: 100%;
+    }
+
+    @media (min-width: 1000px and max-width: 1150px){
+        .moviesGrid{
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 35px; 
+        }
+    }
+
+    @media (min-width: 1150px){
+        .moviesGrid{
+            justify-content: flex-start;
+            align-items: center;
+            margin: auto 30px;
+        }
     }
 
     img {
