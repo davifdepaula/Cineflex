@@ -1,6 +1,12 @@
 import styled from "styled-components"
 
 export const SeatsContainer = styled.div`
+    margin: 10px;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
     .seatsSelector {
         height: 70px;
@@ -15,6 +21,8 @@ export const SeatsContainer = styled.div`
     form, label {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        width: 100%;
     }
 
     form {
